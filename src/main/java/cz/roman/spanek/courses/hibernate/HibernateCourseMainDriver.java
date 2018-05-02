@@ -89,7 +89,7 @@ public class HibernateCourseMainDriver {
         System.out.println("Goodbye!");
         */
         
-    	 
+    	 /*
          System.out.println("load context");
          ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
          
@@ -98,7 +98,7 @@ public class HibernateCourseMainDriver {
          SilniceService silniceServise = (SilniceService)context.getBean("silniceServise");
          Silnice silnice = silniceServise.findById("D1");
          System.out.println("Found one Silnice:"+silnice.getCisloSilnice());
-         
+         */
          
          
     	
