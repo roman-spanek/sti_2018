@@ -99,10 +99,6 @@ public class HibernateCourseMainDriver {
          Silnice silnice = silniceServise.findById("D1");
          System.out.println("Found one Silnice:"+silnice.getCisloSilnice());
          */
-         
-         
-    	
-    	
          /*
          GenericEmployeeService emService = (GenericEmployeeService) context.getBean("genericServiceEmployee");
          Employee employee = emService.findById(1);
