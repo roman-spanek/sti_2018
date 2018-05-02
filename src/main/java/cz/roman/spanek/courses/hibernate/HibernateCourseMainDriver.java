@@ -31,7 +31,7 @@ public class HibernateCourseMainDriver {
     
     public static void main(String[] args) {
     	logger.info("Starting app");
-        /*
+        
         Connection conn = null;
         Statement stmt = null;
         try {
@@ -87,7 +87,7 @@ public class HibernateCourseMainDriver {
             }//end finally try
         }//end try
         System.out.println("Goodbye!");
-        */
+        
         
     	 /*
          System.out.println("load context");
