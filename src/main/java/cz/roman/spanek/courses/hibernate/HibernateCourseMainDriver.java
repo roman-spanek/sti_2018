@@ -14,7 +14,6 @@ public class HibernateCourseMainDriver {
     
     static final String JDBC_DRIVER = "org.postgresql.Driver";
     static final String DB_URL = "jdbc:postgresql://localhost:5432/rdb_2018";
-    //  Database credentials
     static final String USER = "rdb_2018";
     static final String PASS = "rdb_2018";
     
