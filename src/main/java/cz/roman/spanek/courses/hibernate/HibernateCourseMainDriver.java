@@ -55,7 +55,6 @@ public class HibernateCourseMainDriver {
                 int id_omezeni = rs.getInt("id_omezeni");
                 int km_omzeni = rs.getInt("km_omzeni");
                 int prujezdnost = rs.getInt("prujezdnost");
-                String omezeni_typ = rs.getString("omezeni_typ");
                 System.out.print("id_omezeni" + id_omezeni);
                 System.out.print(", km_omzeni: " + km_omzeni);
                 System.out.println(", prujezdnost: " + prujezdnost);
