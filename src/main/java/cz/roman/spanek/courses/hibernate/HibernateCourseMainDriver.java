@@ -1,20 +1,12 @@
 package cz.roman.spanek.courses.hibernate;
 
-import java.sql.DriverManager;
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 import org.apache.log4j.Logger;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import cz.roman.spanek.courses.hibernate.model.Silnice;
-import cz.roman.spanek.courses.hibernate.service.SilniceService;
 
 
 public class HibernateCourseMainDriver {
@@ -30,8 +22,7 @@ public class HibernateCourseMainDriver {
     
     
     public static void main(String[] args) {
-    	logger.info("Starting app");
-        
+    	logger.info("Starting app");        
         Connection conn = null;
         Statement stmt = null;
         try {
