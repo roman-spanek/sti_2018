@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cz.roman.spanek.couses.rdb.lecture</groupId>
     <artifactId>hibernatespring</artifactId>
-    <version>2018.1</version>
+    <version>2018.2</version>
 
     <dependencies>
         <dependency>
@@ -17,13 +17,6 @@
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
         </dependency>
-
-        <!-- <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-tx</artifactId>
-                <version>${spring.version}</version>
-        </dependency> -->
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
@@ -105,30 +98,7 @@
                     <source>1.7</source>
                     <target>1.7</target>
                 </configuration>
-            </plugin>
-            <!-- neumi udelat spustitelny jar soubor, je tu problem s nazvy balicku atd. je treba pouzit shade plugin -->
-            <!--plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                        <archive>
-                                <manifest>
-                                        <mainClass>cz.roman.spanek.courses.hibernate.HibernateCourseMainDriver</mainClass>
-                                </manifest>
-                        </archive>
-                        <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                        </descriptorRefs>
-                </configuration>
-                <executions>
-                        <execution>
-                                <phase>package</phase>
-                                <goals>
-                                        <goal>single</goal>
-                                </goals>
-                        </execution>
-                </executions>
-            </plugin-->
-                
+            </plugin>                
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
