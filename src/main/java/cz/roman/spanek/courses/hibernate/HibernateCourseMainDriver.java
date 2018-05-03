@@ -7,6 +7,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import org.apache.log4j.Logger;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import cz.roman.spanek.courses.hibernate.model.Silnice;
+import cz.roman.spanek.courses.hibernate.service.SilniceService;
 
 
 public class HibernateCourseMainDriver {
@@ -21,8 +26,10 @@ public class HibernateCourseMainDriver {
     
     
     public static void main(String[] args) {
-    	logger.info("Starting app");        
+    	logger.info("Starting app"); 
+    	/*
         Connection conn = null;
+        
         Statement stmt = null;
         try {
             //STEP 2: Register JDBC driver
@@ -76,18 +83,17 @@ public class HibernateCourseMainDriver {
             }//end finally try
         }//end try
         System.out.println("Goodbye!");
+        */
         
-        
-    	 /*
+    	 
          System.out.println("load context");
-         ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-         
+         ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");         
          
          
          SilniceService silniceServise = (SilniceService)context.getBean("silniceServise");
          Silnice silnice = silniceServise.findById("D1");
          System.out.println("Found one Silnice:"+silnice.getCisloSilnice());
-         */
+         
          /*
          GenericEmployeeService emService = (GenericEmployeeService) context.getBean("genericServiceEmployee");
          Employee employee = emService.findById(1);
