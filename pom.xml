@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cz.roman.spanek.couses.rdb.lecture</groupId>
     <artifactId>hibernatespring</artifactId>
-    <version>2018.2</version>
+    <version>2018.3</version>
 
     <dependencies>
         <dependency>
