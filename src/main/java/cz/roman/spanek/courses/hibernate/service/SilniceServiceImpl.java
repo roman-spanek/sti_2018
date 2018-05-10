@@ -20,11 +20,5 @@ public class SilniceServiceImpl implements SilniceService{
 	public Silnice findById(String id) {
 		return silniceDAO.findByKey(id);
 	}
-
-	@Override
-	@Transactional(isolation=Isolation.READ_UNCOMMITTED)
-	public Silnice findByIdByString(String id) {
-		return silniceDAO.findByKey(id);
-	}
   	
 }
