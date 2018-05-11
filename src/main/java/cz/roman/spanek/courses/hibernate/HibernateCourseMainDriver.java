@@ -13,9 +13,7 @@ import cz.roman.spanek.courses.hibernate.service.SilniceService;
 
 public class HibernateCourseMainDriver {
 	private static Logger logger = Logger.getLogger(HibernateCourseMainDriver.class);
-  
-  
-  
+                        
     
     static final String JDBC_DRIVER = "org.postgresql.Driver";
     static final String DB_URL = "jdbc:postgresql://localhost:5432/rdb_2018";
