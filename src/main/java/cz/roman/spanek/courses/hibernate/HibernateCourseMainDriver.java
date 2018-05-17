@@ -23,21 +23,17 @@ public class HibernateCourseMainDriver {
     
     static final String PASS = "rdb_2018"; 
     
-    public static void main(String[] args) {
-    
-    	logger.info("Starting app"); 
-      
+    public static void main(String[] args) {    
+    	logger.info("Starting app");       
     	/*
         Connection conn = null;          
         Statement stmt = null;
         try {
             //STEP 2: Register JDBC driver
-        	Class.forName(JDBC_DRIVER);
-
+        	Class.forName(JDBC_DRIVER); 
             //STEP 3: Open a connection
             System.out.println("Connecting to database...");
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
-
             //STEP 4: Execute a query
             System.out.println("Creating statement...");
             stmt = conn.createStatement();
@@ -52,8 +48,6 @@ public class HibernateCourseMainDriver {
                 int km_omzeni = rs.getInt("km_omzeni");
                 int prujezdnost = rs.getInt("prujezdnost");
                 System.out.print("id_omezeni" + id_omezeni);
-                System.out.print(", km_omzeni: " + km_omzeni);
-                System.out.println(", prujezdnost: " + prujezdnost);
             }
             //STEP 6: Clean-up environment
             rs.close();
