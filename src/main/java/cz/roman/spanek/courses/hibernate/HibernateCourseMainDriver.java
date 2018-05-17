@@ -55,7 +55,9 @@ public class HibernateCourseMainDriver {
         } catch (Exception e) {
             //Handle errors for Class.forName
             e.printStackTrace();
+            e.printStackTrace();
         } finally {
+            //finally block used to close resources
             //finally block used to close resources
             try {
                 if (stmt != null) {
