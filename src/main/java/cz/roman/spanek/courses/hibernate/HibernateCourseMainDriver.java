@@ -4,16 +4,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-
+import java.sql.Statement;  
 import org.apache.log4j.Logger;
-
 import org.springframework.context.ConfigurableApplicationContext;
-
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import cz.roman.spanek.courses.hibernate.model.Silnice;
-
+import cz.roman.spanek.courses.hibernate.model.Silnice; 
 import cz.roman.spanek.courses.hibernate.service.SilniceService; 
 
 public class HibernateCourseMainDriver {
@@ -80,19 +75,15 @@ public class HibernateCourseMainDriver {
         */                     
     	 
         //System.out.println("load context ....");
-         ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");         
-         
-         
+         ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml"); 
          SilniceService silniceServise = (SilniceService)context.getBean("silniceServise");
          Silnice silnice = silniceServise.findById("D1");
-         System.out.println("Found one Silnice:"+silnice.getCisloSilnice());
-         
+         System.out.println("Found one Silnice:"+silnice.getCisloSilnice());               
          /*
          GenericEmployeeService emService = (GenericEmployeeService) context.getBean("genericServiceEmployee");
          Employee employee = emService.findById(1);
          System.out.println("Found one employee:"+employee.getName() + " - "+employee.getAge());
-         */
-         
+         */           
         /*
          System.out.println(em.getName());
          context.close();
