@@ -7,8 +7,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import org.apache.log4j.Logger;
 import org.springframework.context.ConfigurableApplicationContext;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import cz.roman.spanek.courses.hibernate.model.Silnice;
+
 import cz.roman.spanek.courses.hibernate.service.SilniceService; 
 
 public class HibernateCourseMainDriver {
