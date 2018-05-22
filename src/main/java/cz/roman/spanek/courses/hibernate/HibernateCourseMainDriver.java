@@ -20,7 +20,8 @@ public class HibernateCourseMainDriver {
     static final String PASS = "rdb_2018";        
     public static void main(String[] args) {   
      
-    	logger.info("Starting app");       
+    	logger.info("Starting app"); 
+            
     	/*
         Connection conn = null;          
         Statement stmt = null;
