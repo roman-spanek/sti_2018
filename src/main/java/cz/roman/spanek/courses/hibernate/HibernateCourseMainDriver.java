@@ -34,7 +34,6 @@ public class HibernateCourseMainDriver {
             String sql;
             sql = "SELECT * FROM Omezeni";
             ResultSet rs = stmt.executeQuery(sql);
-
             //STEP 5: Extract data from result set
             while (rs.next()) {
                 //Retrieve by column name
@@ -72,8 +71,7 @@ public class HibernateCourseMainDriver {
             }//end finally try
         }//end try
         System.out.println("Goodbye!");
-        */                     
-    	 
+        */ 
         //System.out.println("load context ....");
          ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml"); 
          SilniceService silniceServise = (SilniceService)context.getBean("silniceServise");
