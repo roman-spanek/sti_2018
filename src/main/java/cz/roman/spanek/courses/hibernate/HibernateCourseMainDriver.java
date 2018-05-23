@@ -16,6 +16,8 @@ public class HibernateCourseMainDriver {
 	private static Logger logger = Logger.getLogger(HibernateCourseMainDriver.class);   
     static final String JDBC_DRIVER = "org.postgresql.Driver";    
     static final String DB_URL = "jdbc:postgresql://localhost:5432/";     
+    static final String JDBC_DRIVER = "org.postgresql.Driver";    
+    static final String DB_URL = "jdbc:postgresql://localhost:5432/";  
     static final String USER = "rdb_2018";         
     static final String PASS = "rdb_2018";         
     public static void main(String[] args) {   
