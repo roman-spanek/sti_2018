@@ -10,8 +10,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import cz.roman.spanek.courses.hibernate.model.Silnice; 
 import cz.roman.spanek.courses.hibernate.service.SilniceService; 
-import cz.roman.spanek.courses.hibernate.service.SilniceService; 
-import cz.roman.spanek.courses.hibernate.service.SilniceService; 
+
 
 public class HibernateCourseMainDriver {
 	private static Logger logger = Logger.getLogger(HibernateCourseMainDriver.class);   
