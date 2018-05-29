@@ -7,5 +7,9 @@ public interface SilniceService {
 	Silnice findById(String id);
   
   Silnice findById(Integer id);
+	
+	Silnice findById(String id);
+  
+  Silnice findById(Integer id);  
 
 }
