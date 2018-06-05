@@ -4,7 +4,5 @@ import cz.roman.spanek.courses.hibernate.model.Silnice;
 
 public interface SilniceDAO {  
 		Silnice findByKey(String key);      
-		void save(Silnice silnice);
-		Silnice findByKey(String key);      
-		void save(Silnice silnice);    
+		void save(Silnice silnice);  
 }
